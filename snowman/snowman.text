@@ -1,0 +1,23 @@
+Please Note
+The repl you've cloned has several files:
+main.py that will run the game. No need to modify this file.
+game.py that holds the important snowman(snowman_words) function we will modify
+game_test.py that holds a few written test that will allow us to test your code. No need to modify this file, but feel free to take a look at what these tests might expect.
+Several functions have already been made for you to use as shown below. You do not need to create them again.
+When adding your code, you only need to modify the snowman(snowman_word) function. Note that this function takes a parameter snowman_word. For testing purposes, we will be passing in the random word rather than using RandomWord.
+You should make use of the following functions from the previous lessons (already created for you):
+
+print_snowman_graphic(num_wrong_guesses) 
+- This function prints out the appropriate snowman image depending on the number of wrong guesses the player has made.
+
+build_word_dict(snowman_word) 
+- This function takes snowman_word as input and returns a dictionary with a key-value pair 
+for each letter in snowman_word, where the key is the letter and the value is False.
+
+get_letter_from_user(snowman_word_dict, wrong_guesses_list) 
+- This function takes the snowman_word_dict and the list of characters that have been guessed incorrectly (wrong_guesses_list) as input. 
+It repeatedly asks the user to enter a single character until a valid character is provided. Once a valid character is entered, it is returned.
+
+get_word_progress(snowman_word, snowman_word_dict) - This function takes the snowman_word and snowman_word_dict as input.
+ It prints an output string that shows the correct letter guess placements as well as the placements for the letters yet to be guessed. 
+ It returns True if all the letters of the word have been guessed, and False otherwise.
